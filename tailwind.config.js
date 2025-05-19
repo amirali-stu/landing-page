@@ -24,10 +24,22 @@ export default {
         "general-SemiBold": "general-SemiBold",
       },
       container: {
-        padding: "8rem",
+        center: true, // باعث میشه کانتینر همیشه وسط چین باشه
+        padding: {
+          DEFAULT: "20px", // معادل 16px
+          sm: "20px", // معادل 24px برای اسکرین‌های sm
+          md: "10px", // معادل 32px برای md
+          lg: "50px", // معادل 48px برای lg
+          xl: "2rem", // معادل 64px برای xl
+          "2xl": "5rem", // معادل 80px برای 2xl
+        },
       },
       boxShadow: {
         "blue-800": "0 5px 20px #023e8aa3",
+        // "deep-shadow":"0 4px 100px #48CAE4"
+      },
+      dropShadow: {
+        "deep-shadow": "0 4px 100px #48cae485",
       },
     },
   },

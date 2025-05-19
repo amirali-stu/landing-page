@@ -229,7 +229,7 @@
     <!-- sidebar -->
     <aside
       id="sidebar"
-      class="w-[300px] block md:hidden h-screen z-50 fixed top-0 left-0 -translate-x-full transition-all duration-300 bg-blue-300"
+      class="w-[300px] block md:hidden h-[100%] z-50 fixed top-0 left-0 -translate-x-full transition-all duration-300 bg-blue-300"
     >
       <div class="flex flex-col p-3 gap-3 divide-y">
         <!-- logo and svg close -->
@@ -325,8 +325,8 @@
       </div>
     </aside>
     <!-- main -->
-    <main>
-      <section class="w-[100%] h-[800px] bg-blue-200">
+    <main class="w-[100%]">
+      <section class="w-[100%] h-[800px] bg-blue-200 relative">
         <!-- header content -->
         <div
           class="w-full flex items-center justify-between flex-col sm:flex-row pt-[200px] xl:pl-[129px] lg:pl-[100px] md:pl-[60px] sm:pl-[40px] pl-[20px]"
@@ -361,6 +361,117 @@
               alt=""
               class="w-full h-full"
             />
+          </div>
+        </div>
+      </section>
+      <section class="w-full bg-blue-900">
+        <div
+          class="container w-full flex lg:py-20 md:py-16 py-10 items-center justify-center flex-col gap-y-[54px]"
+        >
+          <h2
+            class="text-blue-200 xl:text-[54px] lg:text-[50px] md:text-5xl text-4xl font-bold font-general-Bold tracking-normal"
+          >
+            Services
+          </h2>
+          <div
+            class="grid md:grid-cols-3 grid-cols-1 xl:gap-[50px] lg:gap-12 md:gap-5 gap-10 child:drop-shadow-deep-shadow child:transition-all child:duration-300"
+          >
+            <div
+              class="xl:h-[570px] lg:h-[400px] md:h-[350px] h-[373px] bg-blue-100 overflow-hidden rounded-lg flex items-center justify-between flex-col"
+            >
+              <!-- image -->
+              <div class="w-[100%]">
+                <img
+                  src="./assets/image/services/image 1.png"
+                  alt="img1"
+                  class="w-full xl:h-[300px] lg:h-[200px] md:[150px] h-[200px]"
+                />
+              </div>
+              <div
+                class="xl:px-8 xl:pt-[19px] xl:pb-[31px] lg:px-4 lg:pb-5 lg:pt-[22px] md:px-2 md:pt-[10px] md:pb-[20px] px-8 pt-[10px] pb-10 flex items-center xl:gap-7 lg:gap-[15px] md:gap-[10px] gap-[12px] flex-col"
+              >
+                <h3
+                  class="text-blue-800 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
+                >
+                  Steel Products
+                </h3>
+                <span
+                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C]"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quasi, dicta necessitatibus</span
+                >
+                <a
+                  href="#"
+                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+            <div
+              class="xl:h-[570px] lg:h-[400px] md:h-[350px] h-[373px] bg-blue-100 overflow-hidden rounded-lg flex items-center justify-between flex-col"
+            >
+              <!-- image -->
+              <div class="w-[100%]">
+                <img
+                  src="./assets/image/services/image 2.png"
+                  alt="img1"
+                  class="w-full xl:h-[300px] lg:h-[200px] md:[150px] h-[200px]"
+                />
+              </div>
+              <div
+                class="xl:px-8 xl:pt-[19px] xl:pb-[31px] lg:px-4 lg:pb-5 lg:pt-[22px] md:px-2 md:pt-[10px] md:pb-[20px] px-8 pt-[10px] pb-10 flex items-center xl:gap-7 lg:gap-[15px] md:gap-[10px] gap-[12px] flex-col"
+              >
+                <h3
+                  class="text-blue-800 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
+                >
+                  Plastic Products
+                </h3>
+                <span
+                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C]"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quasi, dicta necessitatibus</span
+                >
+                <a
+                  href="#"
+                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+            <div
+              class="xl:h-[570px] lg:h-[400px] md:h-[350px] h-[373px] bg-blue-100 overflow-hidden rounded-lg flex items-center justify-between flex-col"
+            >
+              <!-- image -->
+              <div class="w-[100%]">
+                <img
+                  src="./assets/image/services/image 3.png"
+                  alt="img1"
+                  class="w-full xl:h-[300px] lg:h-[200px] md:[150px] h-[200px]"
+                />
+              </div>
+              <div
+                class="xl:px-8 xl:pt-[19px] xl:pb-[31px] lg:px-4 lg:pb-5 lg:pt-[22px] md:px-2 md:pt-[10px] md:pb-[20px] px-8 pt-[10px] pb-10 flex items-center xl:gap-7 lg:gap-[15px] md:gap-[10px] gap-[12px] flex-col"
+              >
+                <h3
+                  class="text-blue-800 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
+                >
+                  Cement Products
+                </h3>
+                <span
+                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C]"
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Quasi, dicta necessitatibus</span
+                >
+                <a
+                  href="#"
+                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
