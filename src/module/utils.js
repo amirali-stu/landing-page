@@ -15,7 +15,6 @@ const toggleAccordion = (event, item) => {
   const accordionItems = item.querySelector(".accordion-item");
   const accordionIcon = item.querySelector(".accordion-icon");
   let isOpen = accordionItems.offsetHeight > 0;
-  console.log(accordionIcon);
   if (!isOpen) {
     accordionItems.style.maxHeight = accordionItems.scrollHeight + "px";
     accordionIcon.style.transform = "rotate(-180deg)";
