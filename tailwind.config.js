@@ -1,0 +1,40 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./src/**/*.html"],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "blue-900": "#03045E",
+        "blue-800": "#023E8A",
+        "blue-700": "#0077B6",
+        "blue-600": "#0096c7",
+        "blue-500": "#00B4D8",
+        "blue-400": "#48CAE4",
+        "blue-300": "#90E0EF",
+        "blue-200": "#ADE8F4",
+        "blue-100": "#CAF0F8",
+        "blue-dark": "#090926",
+        "dark-primer": "#070819",
+      },
+      fontFamily: {
+        "general-Bold": "general-Bold",
+        "general-Medium": "general-Medium",
+        "general-Regular": "general-Regular",
+        "general-SemiBold": "general-SemiBold",
+      },
+      container: {
+        padding: "8rem",
+      },
+      boxShadow: {
+        "blue-800": "0 5px 20px #023e8aa3",
+      },
+    },
+  },
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
+  ],
+};

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/input.tailwind.css" />
+    <script>
+      // بررسی تم ذخیره‌شده یا تنظیمات سیستم
+      (function () {
+        const theme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+
+        if (theme === "dark" || (!theme && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
+  </head>
+  <body class="relative">
+    <svg class="hidden">
+      <symbol
+        id="arrow"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M19 9L12 16L5 9"
+          stroke="#023E8A"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol
+        id="search"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+        />
+      </symbol>
+      <symbol
+        id="menu"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 6H20M4 12H12M4 18H20"
+          stroke="#111B29"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol
+        id="x-mark"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18 18 6M6 6l12 12"
+        />
+      </symbol>
+      <symbol
+        id="moon"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+        />
+      </symbol>
+      <symbol
+        id="sun"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+        />
+      </symbol>
+    </svg>
+    <!-- header -->
+    <header
+      class="xl:w-[83%] w-[90%] fixed left-0 right-0 top-16 mx-auto bg-blue-400 drop-shadow-2xl rounded-2xl lg:p-4 md:p-10 p-5 font-general-SemiBold font-semibold flex items-center justify-between lg:h-20 md:h-[60px] h-14 z-50"
+    >
+      <!-- logo -->
+      <div>
+        <img
+          src="./assets/image/logo/image.png"
+          alt=""
+          class="lg:w-[100px] sm:w-20 w-20 h-full"
+        />
+      </div>
+      <!-- ul list link -->
+      <ul
+        class="xl:text-xl lg:text-lg md:text-base text-blue-800 hidden items-center xl:gap-10 lg:gap-7 md:gap-5 gap-8 sm:flex"
+      >
+        <li><a href="">Home</a></li>
+        <li class="relative flex-col gap-2 items-center hidden md:flex group">
+          <!-- ul item company link -->
+          <div class="flex items-center gap-2 cursor-pointer">
+            Company
+            <svg
+              class="w-6 h-6 text-blue-800 mt-1 transition-all duration-200 delay-100 group-hover:rotate-180"
+            >
+              <use href="#arrow"></use>
+            </svg>
+          </div>
+          <!-- hover linked -->
+          <div
+            class="grid grid-cols-1 child:bg-blue-800 child:text-center font-general-Regular font-light rounded-xl overflow-hidden child:text-blue-300 w-[300px] h-[100px] -bottom-[100px] opacity-0 invisible divide-y absolute transition-all delay-100 duration-200 group-hover:-bottom-[120px] group-hover:opacity-100 group-hover:visible child:h-[50px]"
+          >
+            <!-- about us -->
+            <div>
+              <a
+                href=""
+                class="w-full h-full text-center flex items-center justify-center"
+                >About Us</a
+              >
+            </div>
+            <!-- Certification -->
+            <div class="">
+              <a
+                href=""
+                class="w-full h-full text-center flex items-center justify-center"
+                >Certification</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="relative flex-col gap-2 items-center hidden md:flex group">
+          <!-- ul item company link -->
+          <div class="flex items-center gap-2 cursor-pointer">
+            Product
+            <svg
+              class="w-6 h-6 text-blue-800 mt-1 transition-all duration-200 delay-100 group-hover:rotate-180"
+            >
+              <use href="#arrow"></use>
+            </svg>
+          </div>
+          <!-- hover linked -->
+          <div
+            class="grid grid-cols-1 child:bg-blue-800 child:text-center font-general-Regular font-light rounded-xl overflow-hidden child:text-blue-300 w-[300px] -bottom-[150px] opacity-0 invisible absolute divide-y border-blue-300 transition-all delay-100 duration-200 group-hover:-bottom-[170px] group-hover:opacity-100 group-hover:visible child:h-[50px]"
+          >
+            <!-- about us -->
+            <div>
+              <a
+                href=""
+                class="w-full h-full text-center flex items-center justify-center"
+                >Steel Products</a
+              >
+            </div>
+            <!-- Certification -->
+            <div class="">
+              <a
+                href=""
+                class="w-full h-full text-center flex items-center justify-center"
+                >Plastic Products</a
+              >
+            </div>
+            <!-- Certification -->
+            <div class="">
+              <a
+                href=""
+                class="w-full h-full text-center flex items-center justify-center"
+                >Cement Products</a
+              >
+            </div>
+          </div>
+        </li>
+        <li><a href="">Our Team</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+      <!-- search and menu btn -->
+      <div
+        class="xl:w-64 lg:w-52 md:w-10 h-[40px] lg:bg-white bg-inherit font-general-Medium lg:text-lg rounded-full flex items-center gap-4 pl-4 md:overflow-hidden lg:border-2 lg:border-blue-800"
+      >
+        <svg class="w-6 h-6 text-blue-800 hidden md:block">
+          <use href="#search"></use>
+        </svg>
+        <input
+          type="text"
+          placeholder="Search here..."
+          class="text-[#404169] font-general-Medium font-medium text-lg outline-none border-none w-full lg:block hidden"
+        />
+        <div
+          id="menu-btn"
+          class="w-8 h-8 items-center justify-center rounded-md bg-white cursor-pointer flex md:hidden"
+        >
+          <svg class="w-6 h-6 text-blue-400">
+            <use href="#menu"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <!-- sidebar -->
+    <aside
+      id="sidebar"
+      class="w-[300px] block md:hidden h-screen z-50 fixed top-0 left-0 -translate-x-full transition-all duration-300 bg-blue-300"
+    >
+      <div class="flex flex-col p-3 gap-3 divide-y">
+        <div class="flex items-center justify-between mt-4 py-4">
+          <!-- logo -->
+          <div class="w-[150px]">
+            <img src="./assets/image/logo/image.png" alt="" />
+          </div>
+          <!-- close svg -->
+          <svg class="w-6 h-6">
+            <use href="#x-mark"></use>
+          </svg>
+        </div>
+        <div>
+          <ul
+            class="flex items-start gap-5 flex-col py-5 text-blue-800 font-general-Medium font-medium text-xl"
+          >
+            <li class="pr-2">
+              <a href="">HOME</a>
+            </li>
+            <li class="accordion">
+              <div class="flex items-center gap-1">
+                <span>Company</span>
+                <svg
+                  class="w-5 h-5 mt-1 transition-all duration-500 accordion-icon"
+                >
+                  <use href="#arrow"></use>
+                </svg>
+              </div>
+              <div
+                class="max-h-0 overflow-hidden transition-all duration-500 accordion-item"
+              >
+                <ul class="flex flex-col gap-3 pl-3 pt-3">
+                  <li>
+                    <a href="">About Us</a>
+                  </li>
+                  <li>
+                    <a href="">Certification</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="accordion">
+              <div class="flex items-center gap-1">
+                <span>Products</span>
+                <svg
+                  class="w-5 h-5 mt-1 transition-all duration-500 accordion-icon"
+                >
+                  <use href="#arrow"></use>
+                </svg>
+              </div>
+              <div
+                class="max-h-0 overflow-hidden transition-all duration-500 accordion-item"
+              >
+                <ul class="flex flex-col gap-3 pl-3 pt-3">
+                  <li>
+                    <a href="">Steel Products</a>
+                  </li>
+                  <li>
+                    <a href="">Plastic Products</a>
+                  </li>
+                  <li>
+                    <a href="">Cement Products</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="">Our Team</a>
+            </li>
+            <li>
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul
+            id="toggle-theme"
+            class="py-5 text-blue-800 font-general-Medium font-medium text-xl"
+          >
+            <li class="flex items-center gap-2 dark:hidden">
+              <span>dark mood</span
+              ><svg class="w-6 h-6 text-blue-800"><use href="#moon"></use></svg>
+            </li>
+            <li class="hidden items-center gap-2 dark:flex">
+              <span>light mood</span
+              ><svg class="w-6 h-6 text-blue-800"><use href="#sun"></use></svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- main -->
+    <main>
+      <section class="w-[100%] h-[800px] bg-blue-200">
+        <!-- header content -->
+        <div
+          class="w-full flex items-center justify-between flex-col sm:flex-row pt-[200px] xl:pl-[129px] lg:pl-[100px] md:pl-[60px] sm:pl-[40px] pl-[20px]"
+        >
+          <div class="w-full flex flex-col gap-5 items-start relative z-10">
+            <h1
+              class="font-general-Bold text-blue-800 xl:text-[70px] lg:text-[52px] md:text-5xl text-3xl tracking-normal"
+            >
+              TradeLinkGlobal
+            </h1>
+            <p
+              class="md:w-[438px] text-wrap text-blue-700 font-general-SemiBold lg:text-3xl md:text-2xl text-lg tracking-normal"
+            >
+              Connecting Worlds, Exporting Opportunities!!
+            </p>
+            <p
+              class="lg:w-[583px] md:w-[500px] text-wrap text-blue-600 font-medium font-general-Medium lg:text-[38px] md:text-3xl text-[22px] tracking-normal mt-4"
+            >
+              Boost global business with our highly recommended trading company.
+            </p>
+            <button
+              class="w-[200px] h-[50px] bg-blue-900 text-blue-200 text-center rounded-xl font-general-Medium font-medium shadow-blue-800"
+            >
+              Learn More
+            </button>
+          </div>
+          <div
+            class="absolute z-0 right-0 md:bottom-0 -bottom-[10px] lg:w-[600px] lg:h-[518px] md:w-[500px] md:h-[420px] sm:w-[420px] sm:h-[350px] w-[360px] h-[280px]"
+          >
+            <img
+              src="./assets/image/header/compani-header.png"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      id="overlay"
+      class="transition-all absolute z-40 inset-0 w-full h-full m-auto bg-[#0000001b] overlay-hide"
+    ></div>
+    <script src="./script/them.js"></script>
+    <script type="module" src="./script/index.js"></script>
+  </body>
+</html>

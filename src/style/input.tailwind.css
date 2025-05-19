@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "general-Bold";
+    src: url("/src/assets/fonts/GeneralSans-Bold.otf");
+  }
+  @font-face {
+    font-family: "general-Medium";
+    src: url("../assets/fonts/GeneralSans-Medium.otf");
+  }
+  @font-face {
+    font-family: "general-Regular";
+    src: url("../assets/fonts/GeneralSans-Regular.otf");
+  }
+  @font-face {
+    font-family: "general-SemiBold";
+    src: url("../assets/fonts/GeneralSans-SemiBold.otf");
+  }
+}
+
+@layer components {
+  .overlay-hide {
+    @apply opacity-0 invisible;
+  }
+}
