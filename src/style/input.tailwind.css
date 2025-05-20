@@ -25,4 +25,12 @@
   .overlay-hide {
     @apply opacity-0 invisible;
   }
+  .Achievements {
+    /* background-color: #023E8A; */
+    background: url(../assets/image/Achievements/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50%;
+  }
 }
