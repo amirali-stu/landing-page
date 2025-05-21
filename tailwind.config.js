@@ -37,13 +37,15 @@ export default {
       boxShadow: {
         "blue-800": "0 5px 20px #023e8aa3",
         // "deep-shadow":"0 4px 100px #48CAE4"
-        "light":"0 4px 50px 0 rgba(255,255,255,50)"
+        light: "0 4px 50px 0 rgba(255,255,255,50)",
+        dark: "0 0px 20px 0 #ffffff7a",
       },
       dropShadow: {
         "deep-shadow": "0 4px 100px #48cae485",
       },
       backgroundImage: {
-        'achievements-pattern': "url('./src/assets/image/Achievements/image.png')",
+        "achievements-pattern":
+          "url('./src/assets/image/Achievements/image.png')",
       },
     },
   },
