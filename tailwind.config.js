@@ -35,7 +35,7 @@ export default {
         },
       },
       boxShadow: {
-        "blue-800": "0 5px 20px #023e8aa3",
+        "blue-800": "0 4px 50px 0 rgba(0,0,0,50)",
         // "deep-shadow":"0 4px 100px #48CAE4"
         light: "0 4px 50px 0 rgba(255,255,255,50)",
         dark: "0 0px 20px 0 #ffffff7a",
