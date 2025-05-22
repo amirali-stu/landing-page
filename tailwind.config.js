@@ -4,6 +4,15 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      keyframes: {
+        spinY: {
+          "0%": { transform: "rotateY(0deg)" },
+          "100%": { transform: "rotateY(360deg)" },
+        },
+      },
+      animation: {
+        spinY: "spinY 0.6s linear",
+      },
       colors: {
         "blue-900": "#03045E",
         "blue-800": "#023E8A",
