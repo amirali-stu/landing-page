@@ -44,6 +44,7 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
+          stroke="currentColor"
         />
       </symbol>
       <symbol
@@ -203,7 +204,7 @@
     </svg>
     <!-- header -->
     <header
-      class="xl:w-[83%] w-[90%] fixed left-0 right-0 top-16 mx-auto bg-blue-400 dark:bg-blue-900 backdrop-blur-[6rem] backdrop-filter-3xl rounded-2xl lg:p-4 md:p-10 p-5 font-general-SemiBold font-semibold flex items-center justify-between lg:h-20 md:h-[60px] h-14 z-30 child:dark:text-blue-300"
+      class="xl:w-[83%] w-[90%] fixed left-0 right-0 top-16 mx-auto backdrop-blur-md bg-blue-400/50 dark:backdrop-blur-md dark:bg-blue-900/40 border border-white dark:border-white/40 rounded-2xl lg:p-4 md:p-10 p-5 font-general-SemiBold font-semibold flex items-center justify-between lg:h-20 md:h-[60px] h-14 z-30 child:dark:text-blue-300 shadow-[0_8px_24px_rgba(255,255,255,0.2)] dark:shadow-[0_8px_24px_rgba(0,0,0,0.3)]"
     >
       <!-- logo -->
       <div>
@@ -223,7 +224,7 @@
           <div class="flex items-center gap-2 cursor-pointer">
             Company
             <svg
-              class="w-6 h-6 text-blue-800 dark:text-white mt-1 transition-all duration-200 delay-100 group-hover:rotate-180"
+              class="w-6 h-6 fill-current text-blue-800 dark:text-red-900 mt-1 transition-all duration-200 delay-100 group-hover:rotate-180"
             >
               <use href="#arrow"></use>
             </svg>
@@ -295,7 +296,7 @@
       </ul>
       <!-- search and menu btn -->
       <div
-        class="xl:w-64 lg:w-52 md:w-10 h-[40px] lg:bg-white bg-inherit font-general-Medium lg:text-lg rounded-full flex items-center gap-4 pl-4 md:overflow-hidden lg:border-2 lg:border-blue-800"
+        class="xl:w-64 lg:w-52 md:w-10 h-[40px] lg:bg-white bg-transparent font-general-Medium lg:text-lg rounded-full flex items-center gap-4 pl-4 md:overflow-hidden lg:border-2 lg:border-blue-800"
       >
         <svg class="w-6 h-6 text-blue-800 hidden md:block">
           <use href="#search"></use>
