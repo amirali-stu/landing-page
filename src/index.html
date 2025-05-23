@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!-- swiper slider CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./style/input.tailwind.css" />
     <link rel="icon" type="image/png" href="./assets/image/logo/image2.png" />
     <script>
@@ -610,9 +615,10 @@
       </section>
       <!-- Achievements -->
       <section class="w-full">
-        <div class="w-full Achievements">
+        <div class="w-full bg-blue-800/100">
           <div
-            class="w-full h-full bg-blue-800/60 xl:py-[100px] lg:py-[90px] md:py-[60px] py-[102px] px-10"
+            class="w-full h-full xl:py-[100px] lg:py-[90px] md:py-[60px] py-[102px] px-10"
+            id="Achievements"
           >
             <div
               class="flex items-center justify-center flex-wrap h-full gap-[50px] child:shadow-light"
@@ -1005,9 +1011,191 @@
           </div>
         </div>
       </section>
-      <span
-        class="block mx-auto w-20 h-1 skew-[-200deg] bg-red-800 my-20 rounded-2xl"
-      ></span>
+      <!-- our client -->
+      <section class="w-full">
+        <div class="w-full h-full bg-[#03045E]">
+          <div
+            class="w-full h-full space-y-[63px] xl:space-y-[39px] lg:space-y-[16px] md:space-y-3 pt-7 pb-[63px] md:pt-5 lg:py-[30px] xl:py-[69px]"
+            id="client"
+          >
+            <div
+              class="w-full space-y-[63px] xl:space-y-[39px] lg:space-y-[16px] md:space-y-3 pr-3 pl-[22px] md:mx-auto flex items-center justify-center flex-col"
+            >
+              <!-- title -->
+              <div
+                class="w-[320px] h-[152px] md:w-[390px] md:h-[180px] lg:w-[455px] lg:h-[180px] xl:w-[668px] xl:h-[280px]"
+              >
+                <img
+                  src="assets/image/client/image copy.png"
+                  alt="client title"
+                  class="w-[359px] h-[152px] md:w-[390px] md:h-[180px] lg:w-[455px] lg:h-[180px] xl:w-[668px] xl:h-[280px]"
+                />
+              </div>
+              <!-- content -->
+              <div
+                class="w-[287px] h-[102px] md:w-[380px] md:h-[230px] lg:w-[424px] lg:h[277px] xl:w-[884px] xl:h-[417px] text-nowrap flex flex-col items-start justify-center gap-y-1 mx-auto"
+              >
+                <div
+                  class="flex items-center gap-x-[10px] md:gap-x-3 lg:gap-x-[30px] xl:gap-x-[50px]"
+                >
+                  <span
+                    class="font-bold font-general-Bold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-[#4DE1FF]"
+                    >50+</span
+                  >
+                  <h4
+                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100"
+                  >
+                    Happy Customers
+                  </h4>
+                </div>
+                <div
+                  class="flex items-center gap-x-[10px] md:gap-x-3 lg:gap-x-[30px] xl:gap-x-[50px]"
+                >
+                  <span
+                    class="font-bold font-general-Bold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-[#4DE1FF]"
+                    >20+</span
+                  >
+                  <h4
+                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100"
+                  >
+                    Partners
+                  </h4>
+                </div>
+                <div
+                  class="flex items-center gap-x-[10px] md:gap-x-3 lg:gap-x-[30px] xl:gap-x-[50px]"
+                >
+                  <span
+                    class="font-bold font-general-Bold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-[#4DE1FF]"
+                    >10+</span
+                  >
+                  <h4
+                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100"
+                  >
+                    Collaborations
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <!-- slider -->
+            <div class="swiper w-full h-[116px] bg-white">
+              <div class="swiper-wrapper w-full h-full flex items-center">
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/1.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/2.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/3.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/4.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/5.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/1.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/2.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/3.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/4.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="swiper-slide w-[136px] h-14 flex items-center justify-center"
+                >
+                  <a href="#">
+                    <img
+                      src="assets/image/client/slider/5.png"
+                      alt="slide-item__image"
+                      class="w-[136px] h-14 grayscale hover:grayscale-0 transition duration-300"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- preload -->
       <div
         id="preloader"
         class="fixed inset-0 bg-white flex justify-center items-center z-50 transition-opacity duration-500"
@@ -1020,6 +1208,8 @@
       id="overlay"
       class="transition-all absolute z-40 inset-0 w-full h-full m-auto bg-[#0000001b] overlay-hide"
     ></div>
+
+    <!-- preload animation script -->
     <script>
       lottie.loadAnimation({
         container: document.getElementById("lottie-loader"),
@@ -1037,7 +1227,10 @@
         }, 500); // صبر کن تا افکت محو شدن تموم شه
       });
     </script>
-
+    <!-- swiper slider CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper slider script -->
+    <script type="module" src="./script/slider.js"></script>
     <script src="./script/them.js"></script>
     <script type="module" src="./script/index.js"></script>
   </body>
