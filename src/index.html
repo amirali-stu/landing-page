@@ -28,7 +28,7 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.0/lottie.min.js"></script>
   </head>
-  <body class="relative bg-white dark:bg-blue-900 transition-all duration-200">
+  <body class="relative bg-white dark:bg-blue-900 transition-all duration-300">
     <!-- icons -->
     <svg class="hidden">
       <symbol
@@ -204,7 +204,7 @@
     </svg>
     <!-- header -->
     <header
-      class="xl:w-[83%] w-[90%] fixed left-0 right-0 top-16 mx-auto backdrop-blur-md bg-blue-400/50 dark:backdrop-blur-md dark:bg-blue-900/40 border border-white dark:border-white/40 rounded-2xl lg:p-4 md:p-10 p-5 font-general-SemiBold font-semibold flex items-center justify-between lg:h-20 md:h-[60px] h-14 z-30 child:dark:text-blue-300 shadow-[0_8px_24px_rgba(255,255,255,0.2)] dark:shadow-[0_8px_24px_rgba(0,0,0,0.3)]"
+      class="xl:w-[83%] w-[90%] fixed left-0 right-0 top-16 mx-auto backdrop-blur-md bg-blue-400/50 dark:backdrop-blur-md dark:bg-blue-900/40 border border-white dark:border-white/40 rounded-2xl lg:p-4 md:p-10 p-5 font-general-SemiBold font-semibold flex items-center justify-between lg:h-20 md:h-[60px] h-14 z-30 child:dark:text-blue-300 shadow-[0_8px_24px_rgba(255,255,255,0.2)] dark:shadow-[0_8px_24px_rgba(0,0,0,0.3)] transition-all duration-300"
     >
       <!-- logo -->
       <div>
@@ -216,7 +216,7 @@
       </div>
       <!-- ul list link -->
       <ul
-        class="xl:text-xl lg:text-lg md:text-base text-blue-800 hidden items-center xl:gap-10 lg:gap-7 md:gap-5 gap-8 sm:flex"
+        class="xl:text-xl lg:text-lg md:text-base text-blue-800 transition-all duration-300 hidden items-center xl:gap-10 lg:gap-7 md:gap-5 gap-8 sm:flex"
       >
         <li><a href="">Home</a></li>
         <li class="relative flex-col gap-2 items-center hidden md:flex group">
@@ -399,8 +399,7 @@
         <!-- light and dark mood -->
         <div>
           <ul
-            id="toggle-theme"
-            class="py-5 text-blue-800 dark:text-blue-300 font-general-Medium font-medium text-xl"
+            class="toggle-theme py-5 text-blue-800 dark:text-blue-300 font-general-Medium font-medium text-xl"
           >
             <li class="flex items-center gap-2 dark:hidden">
               <span>dark mood</span
@@ -421,29 +420,31 @@
     <!-- main -->
     <main class="w-[100%]">
       <!-- TradeLinkGlobal -->
-      <section class="w-[100%] h-[800px] bg-blue-200 dark:bg-blue-700 relative">
+      <section
+        class="w-[100%] h-[800px] bg-blue-200 dark:bg-blue-700 transition-all duration-300 relative"
+      >
         <!-- header content -->
         <div
           class="w-full flex items-center justify-between flex-col sm:flex-row pt-[200px] xl:pl-[129px] lg:pl-[100px] md:pl-[60px] sm:pl-[40px] pl-[20px]"
         >
           <div class="w-full flex flex-col gap-5 items-start relative z-10">
             <h1
-              class="font-general-Bold text-blue-800 dark:text-blue-900 xl:text-[70px] lg:text-[52px] md:text-5xl text-3xl tracking-normal"
+              class="font-general-Bold text-blue-800 dark:text-blue-900 transition-all duration-300 xl:text-[70px] lg:text-[52px] md:text-5xl text-3xl tracking-normal"
             >
               TradeLinkGlobal
             </h1>
             <p
-              class="md:w-[438px] text-wrap text-blue-700 dark:text-blue-300 font-general-SemiBold lg:text-3xl md:text-2xl text-lg tracking-normal"
+              class="md:w-[438px] text-wrap text-blue-700 dark:text-blue-300 transition-all duration-300 font-general-SemiBold lg:text-3xl md:text-2xl text-lg tracking-normal"
             >
               Connecting Worlds, Exporting Opportunities!!
             </p>
             <p
-              class="lg:w-[583px] md:w-[500px] text-wrap text-blue-600 dark:text-blue-300 font-medium font-general-Medium lg:text-[38px] md:text-3xl text-[22px] tracking-normal mt-4"
+              class="lg:w-[583px] md:w-[500px] text-wrap text-blue-600 dark:text-blue-300 transition-all duration-300 font-medium font-general-Medium lg:text-[38px] md:text-3xl text-[22px] tracking-normal mt-4"
             >
               Boost global business with our highly recommended trading company.
             </p>
             <button
-              class="w-[200px] h-[50px] bg-blue-900 dark:bg-blue-200 text-blue-200 dark:text-blue-700 text-center rounded-xl font-general-Medium font-medium shadow-blue-800 dark:shadow-light"
+              class="w-[200px] h-[50px] bg-blue-900 dark:bg-blue-200 text-blue-200 dark:text-blue-700 transition-all duration-300 text-center rounded-xl font-general-Medium font-medium shadow-blue-800 dark:shadow-light"
             >
               Learn More
             </button>
@@ -470,7 +471,7 @@
             Services
           </h2>
           <div
-            class="grid md:grid-cols-3 grid-cols-1 xl:gap-[50px] lg:gap-12 md:gap-5 gap-10 child:drop-shadow-deep-shadow child:transition-all child:duration-300 child:dark:bg-blue-900"
+            class="grid md:grid-cols-3 grid-cols-1 xl:gap-[50px] lg:gap-12 md:gap-5 gap-10 child:drop-shadow-deep-shadow child:transition-all child:duration-300 child:dark:bg-blue-900 transition-all duration-300"
           >
             <div
               class="xl:h-[570px] lg:h-[400px] md:h-[350px] h-[373px] bg-blue-100 overflow-hidden rounded-lg flex items-center justify-between flex-col"
@@ -487,18 +488,18 @@
                 class="xl:px-8 xl:pt-[19px] xl:pb-[31px] lg:px-4 lg:pb-5 lg:pt-[22px] md:px-2 md:pt-[10px] md:pb-[20px] px-8 pt-[10px] pb-10 flex items-center xl:gap-7 lg:gap-[15px] md:gap-[10px] gap-[12px] flex-col"
               >
                 <h3
-                  class="text-blue-800 dark:text-blue-400 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
+                  class="text-blue-800 dark:text-blue-400 transition-all duration-300 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
                 >
                   Steel Products
                 </h3>
                 <span
-                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C] dark:text-blue-200"
+                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C] dark:text-blue-200 transition-all duration-300"
                   >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quasi, dicta necessitatibus</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 dark:bg-blue-800 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
+                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 dark:bg-blue-800 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg transition-all duration-300"
                 >
                   Read more
                 </a>
@@ -519,19 +520,19 @@
                 class="xl:px-8 xl:pt-[19px] xl:pb-[31px] lg:px-4 lg:pb-5 lg:pt-[22px] md:px-2 md:pt-[10px] md:pb-[20px] px-8 pt-[10px] pb-10 flex items-center xl:gap-7 lg:gap-[15px] md:gap-[10px] gap-[12px] flex-col"
               >
                 <h3
-                  class="text-blue-800 dark:text-blue-400 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
+                  class="text-blue-800 dark:text-blue-400 transition-all duration-300 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
                 >
                   Plastic Products
                 </h3>
                 <span
-                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C] dark:text-blue-200"
+                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C] dark:text-blue-200 transition-all duration-300"
                   >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quasi, dicta necessitatibus</span
                 >
                 <a
                   href="#"
                   type="submit"
-                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 dark:bg-blue-800 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
+                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 dark:bg-blue-800 transition-all duration-300 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
                 >
                   Read more
                 </a>
@@ -552,18 +553,18 @@
                 class="xl:px-8 xl:pt-[19px] xl:pb-[31px] lg:px-4 lg:pb-5 lg:pt-[22px] md:px-2 md:pt-[10px] md:pb-[20px] px-8 pt-[10px] pb-10 flex items-center xl:gap-7 lg:gap-[15px] md:gap-[10px] gap-[12px] flex-col"
               >
                 <h3
-                  class="text-blue-800 dark:text-blue-400 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
+                  class="text-blue-800 dark:text-blue-400 transition-all duration-300 xl:text-3xl lg:text-xl md:text-base text-xl tracking-normal font-general-Bold font-bold"
                 >
                   Cement Products
                 </h3>
                 <span
-                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C] dark:text-blue-200"
+                  class="text-justify xl:w-[350px] xl:h-[64px] lg:w-[221px] lg:h-[44hug] md:w-[220px] md:h-[00hug] w-[221px] h-[44hug] text-wrap font-general-Regular font-medium xl:text-xl lg:text-sm md:text-xs text-sm tracking-normal text-[#3B3F5C] dark:text-blue-200 transition-all duration-300"
                   >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Quasi, dicta necessitatibus</span
                 >
                 <a
                   href="#"
-                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 dark:bg-blue-800 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
+                  class="flex items-center justify-center xl:w-[350px] xl:h-[60px] lg:w-[200px] lg:h-[40px] md:w-[80%] md:h-[30px] w-[200px] h-[40px] bg-blue-900 dark:bg-blue-800 transition-all duration-300 text-white xl:text-2xl lg:text-sm md:text-xs text-sm tracking-normal rounded-lg"
                 >
                   Read more
                 </a>
@@ -574,7 +575,7 @@
       </section>
       <!-- About TradeLinkGlobal -->
       <section
-        class="w-full bg-blue-100 dark:bg-blue-700 flex items-center justify-center"
+        class="w-full bg-blue-100 dark:bg-blue-700 transition-all duration-300 flex items-center justify-center"
       >
         <div
           class="w-full xl:pl-[30px] xl:pr-[9px] xl:pt-[100px] xl:pb-[50px] lg:py-[46px] md:py-[32px] py-[26px] px-[32px] flex md:flex-row flex-col items-center justify-between max-w-[1500px] gap-y-[18px] md:gap-0"
@@ -592,19 +593,20 @@
             class="xl:w-[770px] md:w-[50%] w-[328px] flex flex-col lg:gap-11 md:gap-8 gap-[25px]"
           >
             <h2
-              class="font-general-Bold font-bold xl:text-[70px] lg:text-[34px] md:text-[28px] text-[30px] text-blue-800 dark:text-blue-900"
+              class="font-general-Bold font-bold xl:text-[70px] lg:text-[34px] md:text-[28px] text-[30px] text-blue-800 dark:text-blue-900 transition-all duration-300"
             >
-              About <br /><span class="pl-10 text-blue-700 dark:text-blue-900"
+              About <br /><span
+                class="pl-10 text-blue-700 dark:text-blue-900 transition-all duration-300"
                 >TradeLinkGlobal</span
               >
             </h2>
             <p
-              class="font-semibold font-general-SemiBold xl:leading-[3rem] xl:text-[40px] lg:text-[28px] md:text-2xl text-[22px] text-black dark:text-blue-200"
+              class="font-semibold font-general-SemiBold xl:leading-[3rem] xl:text-[40px] lg:text-[28px] md:text-2xl text-[22px] text-black dark:text-blue-200 transition-all duration-300"
             >
               Insights and Resources to help drive your Business Forward Faster.
             </p>
             <p
-              class="font-general-Regular font-normal text-black/100 dark:text-blue-200 xl:text-[24px] xl:leading-[2rem] lg:text-lg text-sm"
+              class="font-general-Regular font-normal text-black/100 dark:text-blue-200 transition-all duration-300 xl:text-[24px] xl:leading-[2rem] lg:text-lg text-sm"
             >
               We build results-oriented brand strategy and continually refine
               the campaign for the greatest outcome. From full scale branding
@@ -625,7 +627,7 @@
               class="flex items-center justify-center flex-wrap h-full gap-[50px] child:shadow-light"
             >
               <div
-                class="bg-white dark:bg-blue-800 rounded-3xl flex flex-col items-center justify-between xl:py-[34px] xl:px-[50px] lg:py-[25px] lg:px-[42px] md:py-[18px] md:px-[36px] md:gap-5 xl:w-[250px] xl:h-[250px] lg:w-[200px] lg:h-[200px] md:w-[170px] md:h-[160px] w-[150px] h-[150px] p-5"
+                class="bg-white transition-all duration-300 dark:bg-blue-800 rounded-3xl flex flex-col items-center justify-between xl:py-[34px] xl:px-[50px] lg:py-[25px] lg:px-[42px] md:py-[18px] md:px-[36px] md:gap-5 xl:w-[250px] xl:h-[250px] lg:w-[200px] lg:h-[200px] md:w-[170px] md:h-[160px] w-[150px] h-[150px] p-5"
               >
                 <div
                   class="flex items-center justify-center xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] md:w-[60px] md:h-[60px] bg-blue-700 xl:rounded-3xl md:rounded-2xl w-[60px] h-[60px] rounded-[1.3rem]"
@@ -641,18 +643,18 @@
                   class="xl:w-[141px] xl:h-[70px] lg:w-[115px] lg:h-[59px] md:w-[95px] md:h-[50px] w-[108px] h-[42px] xl:gap-3 flex items-center flex-col"
                 >
                   <h4
-                    class="font-semibold font-general-SemiBold xl:text-[30px] lg:text-[22px] text-lg text-blue-900 dark:text-blue-300"
+                    class="font-semibold font-general-SemiBold xl:text-[30px] lg:text-[22px] text-lg text-blue-900 transition-all duration-300 dark:text-blue-300"
                   >
                     1500+
                   </h4>
                   <span
-                    class="font-medium font-general-Medium xl:text-[22px] lg:text-lg md:text-sm text-xs text-nowrap text-blue-500 dark:text-blue-400"
+                    class="font-medium font-general-Medium xl:text-[22px] lg:text-lg md:text-sm text-xs text-nowrap text-blue-500 transition-all duration-300 dark:text-blue-400"
                     >Consignment Done</span
                   >
                 </div>
               </div>
               <div
-                class="bg-white dark:bg-blue-800 rounded-3xl flex flex-col items-center justify-between xl:py-[34px] xl:px-[50px] lg:py-[25px] lg:px-[42px] md:py-[18px] md:px-[36px] md:gap-5 xl:w-[250px] xl:h-[250px] lg:w-[200px] lg:h-[200px] md:w-[170px] md:h-[160px] w-[150px] h-[150px] p-5 xl:mt-60 lg:mt-40 md:mt-20"
+                class="bg-white transition-all duration-300 dark:bg-blue-800 rounded-3xl flex flex-col items-center justify-between xl:py-[34px] xl:px-[50px] lg:py-[25px] lg:px-[42px] md:py-[18px] md:px-[36px] md:gap-5 xl:w-[250px] xl:h-[250px] lg:w-[200px] lg:h-[200px] md:w-[170px] md:h-[160px] w-[150px] h-[150px] p-5 xl:mt-60 lg:mt-40 md:mt-20"
               >
                 <div
                   class="flex items-center justify-center xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] md:w-[60px] md:h-[60px] bg-blue-700 xl:rounded-3xl md:rounded-2xl w-[60px] h-[60px] rounded-[1.3rem]"
@@ -668,18 +670,18 @@
                   class="xl:w-[141px] xl:h-[70px] lg:w-[115px] lg:h-[59px] md:w-[95px] md:h-[50px] w-[108px] h-[42px] xl:gap-3 flex items-center flex-col"
                 >
                   <h4
-                    class="font-semibold font-general-SemiBold xl:text-[30px] lg:text-[22px] text-lg text-blue-900 dark:text-blue-300"
+                    class="font-semibold font-general-SemiBold xl:text-[30px] lg:text-[22px] text-lg text-blue-900 transition-all duration-300 dark:text-blue-300"
                   >
                     150+
                   </h4>
                   <span
-                    class="font-medium font-general-Medium xl:text-[22px] lg:text-lg md:text-sm text-xs text-nowrap text-blue-500 dark:text-blue-400"
+                    class="font-medium font-general-Medium xl:text-[22px] lg:text-lg md:text-sm text-xs text-nowrap text-blue-500 transition-all duration-300 dark:text-blue-400"
                     >Happy Buyers</span
                   >
                 </div>
               </div>
               <div
-                class="bg-white dark:bg-blue-800 rounded-3xl flex flex-col items-center justify-between xl:py-[34px] xl:px-[50px] lg:py-[25px] lg:px-[42px] md:py-[18px] md:px-[36px] md:gap-5 xl:w-[250px] xl:h-[250px] lg:w-[200px] lg:h-[200px] md:w-[170px] md:h-[160px] w-[150px] h-[150px] p-5"
+                class="bg-white transition-all duration-300 dark:bg-blue-800 rounded-3xl flex flex-col items-center justify-between xl:py-[34px] xl:px-[50px] lg:py-[25px] lg:px-[42px] md:py-[18px] md:px-[36px] md:gap-5 xl:w-[250px] xl:h-[250px] lg:w-[200px] lg:h-[200px] md:w-[170px] md:h-[160px] w-[150px] h-[150px] p-5"
               >
                 <div
                   class="flex items-center justify-center xl:w-[100px] xl:h-[100px] lg:w-[80px] lg:h-[80px] md:w-[60px] md:h-[60px] bg-blue-700 xl:rounded-3xl md:rounded-2xl w-[60px] h-[60px] rounded-[1.3rem]"
@@ -695,12 +697,12 @@
                   class="xl:w-[141px] xl:h-[70px] lg:w-[115px] lg:h-[59px] md:w-[95px] md:h-[50px] w-[108px] h-[42px] xl:gap-3 flex items-center flex-col"
                 >
                   <h4
-                    class="font-semibold font-general-SemiBold xl:text-[30px] lg:text-[22px] text-lg text-blue-900 dark:text-blue-300"
+                    class="font-semibold font-general-SemiBold xl:text-[30px] lg:text-[22px] text-lg text-blue-900 transition-all duration-300 dark:text-blue-300"
                   >
                     10+
                   </h4>
                   <span
-                    class="font-medium font-general-Medium xl:text-[22px] lg:text-lg md:text-sm text-xs text-nowrap text-blue-500 dark:text-blue-400"
+                    class="font-medium font-general-Medium xl:text-[22px] lg:text-lg md:text-sm text-xs text-nowrap text-blue-500 transition-all duration-300 dark:text-blue-400"
                     >Years Experience</span
                   >
                 </div>
@@ -711,7 +713,7 @@
       </section>
       <!-- Introducing Our  Work -->
       <section
-        class="w-full flex items-center justify-center bg-white dark:bg-blue-800"
+        class="w-full flex items-center justify-center bg-white transition-all duration-300 dark:bg-blue-800"
       >
         <div
           class="w-full flex md:flex-row flex-col-reverse items-center justify-between xl:py-[100px] xl:pl-[107px] xl:pr-4 lg:py-10 lg:pl-10 lg:pr-9 md:py-5 md:pl-14 md:pr-8 max-w-[1500px] pt-4 pb-10 px-[32px] gap-y-[26px] md:gap-y-0"
@@ -720,24 +722,24 @@
             class="xl:w-[770px] lg:w-[471px] md:w-[390px] w-[329px] flex flex-col xl:gap-y-[33px] lg:gap-y-[25px] md:gap-y-4 gap-y-[25px]"
           >
             <h2
-              class="xl:text-[70px] leading-[4.5rem] lg:text-[34px] md:text-[28px] text-3xl text-blue-700 dark:text-blue-400 font-bold font-general-Bold"
+              class="xl:text-[70px] leading-[4.5rem] lg:text-[34px] md:text-[28px] text-3xl text-blue-700 transition-all duration-300 dark:text-blue-400 font-bold font-general-Bold"
             >
               Introducing Our Work
             </h2>
             <p
-              class="xl:text-[41.42px] xl:leading-[3.5rem] lg:text-[28px] lg:leading-[2.5rem] md:text-xl text-[22px] text-black/100 dark:text-blue-300 font-semibold font-general-SemiBold"
+              class="xl:text-[41.42px] xl:leading-[3.5rem] lg:text-[28px] lg:leading-[2.5rem] md:text-xl text-[22px] text-black/100 transition-all duration-300 dark:text-blue-300 font-semibold font-general-SemiBold"
             >
               Tailoring services for global exporters with personalized
               attention.
             </p>
             <span
-              class="xl:text-2xl lg:text-lg text-sm font-general-Regular font-normal text-black/100 dark:text-blue-200 xl:w-[679px] lg:w-[428px] md:w-[280px] xl:h-[90px] lg:h-[90px] md:h-[90px]"
+              class="xl:text-2xl lg:text-lg text-sm font-general-Regular font-normal text-black/100 transition-all duration-300 dark:text-blue-200 xl:w-[679px] lg:w-[428px] md:w-[280px] xl:h-[90px] lg:h-[90px] md:h-[90px]"
               >Our creativity is driven by depth study in an effort to give you
               the best result and position of your product successfully in
               international market.</span
             >
             <span
-              class="xl:text-2xl lg:text-lg text-sm font-general-Regular font-normal text-black/100 dark:text-blue-200 xl:w-[679px] lg:w-[428px] md:w-[280px] xl:h-[90px] lg:h-[90px] md:h-[90px]"
+              class="xl:text-2xl lg:text-lg text-sm font-general-Regular font-normal text-black/100 transition-all duration-300 dark:text-blue-200 xl:w-[679px] lg:w-[428px] md:w-[280px] xl:h-[90px] lg:h-[90px] md:h-[90px]"
               >We’re on a mission to start studying the exact market for your
               products worldwide and establish the product in appropriate
               market.</span
@@ -773,7 +775,7 @@
             class="grid md:grid-cols-3 grid-cols-1 items-center xl:gap-x-[60px] lg:gap-x-[40px] md:gap-x-6 md:gap-y-0 gap-y-[30px]"
           >
             <div
-              class="rounded-[40px] bg-white dark:bg-blue-800 dark:border dark:border-white xl:h-[600px] xl:py-[68px] xl:space-y-12 lg:space-y-5 md:space-y-5 space-y-5 xl:px-[54px] lg:h-[370px] lg:py-9 lg:px-12 md:h-[250px] md:py-5 md:px-8 h-[370hug] px-[36px] py-[42px] user-box__light"
+              class="rounded-[40px] bg-white transition-all duration-300 dark:bg-blue-800 dark:border dark:border-white xl:h-[600px] xl:py-[68px] xl:space-y-12 lg:space-y-5 md:space-y-5 space-y-5 xl:px-[54px] lg:h-[370px] lg:py-9 lg:px-12 md:h-[250px] md:py-5 md:px-8 h-[370hug] px-[36px] py-[42px] user-box__light"
             >
               <!-- user photo -->
               <div
@@ -790,18 +792,18 @@
                 class="flex items-center flex-col lg:gap-y-2 md:gap-y-1 gap-y-2"
               >
                 <h4
-                  class="font-bold font-general-Bold xl:text-4xl lg:text-2xl md:text-lg text-2xl text-[#252525] dark:text-blue-600"
+                  class="font-bold font-general-Bold xl:text-4xl lg:text-2xl md:text-lg text-2xl text-[#252525] transition-all duration-300 dark:text-blue-600"
                 >
                   Aryan Kakadiya
                 </h4>
                 <span
-                  class="font-general-Regular font-medium text-[#26235C] dark:text-blue-500 xl:text-[23px] lg:text-lg md:text-sm text-lg"
+                  class="font-general-Regular font-medium text-[#26235C] transition-all duration-300 dark:text-blue-500 xl:text-[23px] lg:text-lg md:text-sm text-lg"
                   >Project Leader</span
                 >
               </div>
               <!-- apps -->
               <div
-                class="flex items-center justify-between child:xl:w-[40px] child:xl:h-[31px] child:lg:w-[26px] child:lg:h-[19px] child:md:w-5 child:md:h-4 child:w-[26px] child:h-5 child:text-[#26235C] child:dark:text-blue-800 child-hover:text-blue-400 child:transition-all"
+                class="flex items-center justify-between child:xl:w-[40px] child:xl:h-[31px] child:lg:w-[26px] child:lg:h-[19px] child:md:w-5 child:md:h-4 child:w-[26px] child:h-5 child:text-[#26235C] child:dark:text-blue-800 child-hover:text-blue-400 child:transition-all child:duration-300"
               >
                 <a
                   href="#"
@@ -852,7 +854,7 @@
               </div>
             </div>
             <div
-              class="rounded-[40px] bg-white dark:bg-blue-800 dark:border dark:border-white xl:h-[600px] xl:py-[68px] xl:space-y-12 lg:space-y-5 md:space-y-5 space-y-5 xl:px-[54px] lg:h-[370px] lg:py-9 lg:px-12 md:h-[250px] md:py-5 md:px-8 h-[370hug] px-[36px] py-[42px] user-box__light"
+              class="rounded-[40px] bg-white transition-all duration-300 dark:bg-blue-800 dark:border dark:border-white xl:h-[600px] xl:py-[68px] xl:space-y-12 lg:space-y-5 md:space-y-5 space-y-5 xl:px-[54px] lg:h-[370px] lg:py-9 lg:px-12 md:h-[250px] md:py-5 md:px-8 h-[370hug] px-[36px] py-[42px] user-box__light"
             >
               <!-- user photo -->
               <div
@@ -869,18 +871,18 @@
                 class="flex items-center flex-col lg:gap-y-2 md:gap-y-1 gap-y-2"
               >
                 <h4
-                  class="font-bold font-general-Bold xl:text-4xl lg:text-2xl md:text-lg text-2xl text-[#252525] dark:text-blue-600"
+                  class="font-bold font-general-Bold xl:text-4xl lg:text-2xl md:text-lg text-2xl text-[#252525] transition-all duration-300 dark:text-blue-600"
                 >
                   Aryan Kakadiya
                 </h4>
                 <span
-                  class="font-general-Regular font-medium text-[#26235C] dark:text-blue-500 xl:text-[23px] lg:text-lg md:text-sm text-lg"
+                  class="font-general-Regular font-medium text-[#26235C] transition-all duration-300 dark:text-blue-500 xl:text-[23px] lg:text-lg md:text-sm text-lg"
                   >Project Leader</span
                 >
               </div>
               <!-- apps -->
               <div
-                class="flex items-center justify-between child:xl:w-[40px] child:xl:h-[31px] child:lg:w-[26px] child:lg:h-[19px] child:md:w-5 child:md:h-4 child:w-[26px] child:h-5 child:text-[#26235C] child:dark:text-blue-800 child-hover:text-blue-400 child:transition-all"
+                class="flex items-center justify-between child:xl:w-[40px] child:xl:h-[31px] child:lg:w-[26px] child:lg:h-[19px] child:md:w-5 child:md:h-4 child:w-[26px] child:h-5 child:text-[#26235C] child:dark:text-blue-800 child-hover:text-blue-400 child:transition-all child:duration-300"
               >
                 <a
                   href="#"
@@ -931,7 +933,7 @@
               </div>
             </div>
             <div
-              class="rounded-[40px] bg-white dark:bg-blue-800 dark:border dark:border-white xl:h-[600px] xl:py-[68px] xl:space-y-12 lg:space-y-5 md:space-y-5 space-y-5 xl:px-[54px] lg:h-[370px] lg:py-9 lg:px-12 md:h-[250px] md:py-5 md:px-8 h-[370hug] px-[36px] py-[42px] user-box__light"
+              class="rounded-[40px] bg-white transition-all duration-300 dark:bg-blue-800 dark:border dark:border-white xl:h-[600px] xl:py-[68px] xl:space-y-12 lg:space-y-5 md:space-y-5 space-y-5 xl:px-[54px] lg:h-[370px] lg:py-9 lg:px-12 md:h-[250px] md:py-5 md:px-8 h-[370hug] px-[36px] py-[42px] user-box__light"
             >
               <!-- user photo -->
               <div
@@ -948,18 +950,18 @@
                 class="flex items-center flex-col lg:gap-y-2 md:gap-y-1 gap-y-2"
               >
                 <h4
-                  class="font-bold font-general-Bold xl:text-4xl lg:text-2xl md:text-lg text-2xl text-[#252525] dark:text-blue-600"
+                  class="font-bold font-general-Bold xl:text-4xl lg:text-2xl md:text-lg text-2xl text-[#252525] transition-all duration-300 dark:text-blue-600"
                 >
                   Aryan Kakadiya
                 </h4>
                 <span
-                  class="font-general-Regular font-medium text-[#26235C] dark:text-blue-500 xl:text-[23px] lg:text-lg md:text-sm text-lg"
+                  class="font-general-Regular font-medium text-[#26235C] transition-all duration-300 dark:text-blue-500 xl:text-[23px] lg:text-lg md:text-sm text-lg"
                   >Project Leader</span
                 >
               </div>
               <!-- apps -->
               <div
-                class="flex items-center justify-between child:xl:w-[40px] child:xl:h-[31px] child:lg:w-[26px] child:lg:h-[19px] child:md:w-5 child:md:h-4 child:w-[26px] child:h-5 child:text-[#26235C] child:dark:text-blue-800 child-hover:text-blue-400 child:transition-all"
+                class="flex items-center justify-between child:xl:w-[40px] child:xl:h-[31px] child:lg:w-[26px] child:lg:h-[19px] child:md:w-5 child:md:h-4 child:w-[26px] child:h-5 child:text-[#26235C] child:dark:text-blue-800 child-hover:text-blue-400 child:transition-all child:duration-300"
               >
                 <a
                   href="#"
@@ -1029,12 +1031,12 @@
                 <img
                   src="assets/image/client/client-content.png"
                   alt="client title"
-                  class="w-[359px] h-[152px] md:w-[390px] md:h-[180px] lg:w-[455px] lg:h-[180px] xl:w-[668px] xl:h-[280px] block dark:hidden"
+                  class="w-[359px] h-[152px] md:w-[390px] md:h-[180px] lg:w-[455px] lg:h-[180px] xl:w-[668px] xl:h-[280px] block transition-all duration-300 dark:hidden"
                 />
                 <img
                   src="assets/image/client/client-content__dark.png"
                   alt="client title"
-                  class="w-[300px] h-[140px] md:w-[390px] md:h-[150px] lg:w-[455px] lg:h-[150px] xl:w-[668px] xl:h-[240px] hidden dark:block"
+                  class="w-[300px] h-[140px] md:w-[390px] md:h-[150px] lg:w-[455px] lg:h-[150px] xl:w-[668px] xl:h-[240px] hidden transition-all duration-300 dark:block"
                 />
               </div>
               <!-- content -->
@@ -1049,7 +1051,7 @@
                     >50+</span
                   >
                   <h4
-                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100 dark:text-blue-400"
+                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100 transition-all duration-300 dark:text-blue-400"
                   >
                     Happy Customers
                   </h4>
@@ -1062,7 +1064,7 @@
                     >20+</span
                   >
                   <h4
-                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100 dark:text-blue-400"
+                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100 transition-all duration-300 dark:text-blue-400"
                   >
                     Partners
                   </h4>
@@ -1075,7 +1077,7 @@
                     >10+</span
                   >
                   <h4
-                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100 dark:text-blue-400"
+                    class="font-semibold font-general-SemiBold text-[28px] md:text-[34px] lg:text-[40px] xl:text-[80px] text-white/100 transition-all duration-300 dark:text-blue-400"
                   >
                     Collaborations
                   </h4>
@@ -1084,7 +1086,7 @@
             </div>
             <!-- slider -->
             <div
-              class="swiper w-full h-[116px] bg-white dark:bg-gradient-to-l dark:bg-blue-800"
+              class="swiper w-full h-[116px] bg-white transition-all duration-300 dark:bg-gradient-to-l dark:bg-blue-800"
             >
               <div class="swiper-wrapper w-full h-full flex items-center">
                 <div
@@ -1202,6 +1204,15 @@
           </div>
         </div>
       </section>
+
+      <div class="toggle-theme fixed left-10 bottom-10 z-20 cursor-pointer">
+        <svg
+          class="w-12 h-12 rounded-full p-2 backdrop-blur-md bg-black/30 dark:bg-white/30 text-white border border-white dark:border-white/40 transition-all duration-300 hidden md:block"
+        >
+          <use href="#moon" class="hidden dark:block"></use>
+          <use href="#sun" class="block dark:hidden"></use>
+        </svg>
+      </div>
 
       <!-- preload -->
       <div
