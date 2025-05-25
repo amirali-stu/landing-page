@@ -46,4 +46,13 @@
     background-attachment: scroll;
     background-position: 50%;
   }
+  /* .footer-link__item__style::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/image/footer/list_style.png);
+    background-repeat: no-repeat;
+  } */
 }
