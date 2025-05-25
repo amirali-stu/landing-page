@@ -301,7 +301,7 @@
       <div
         class="xl:w-64 lg:w-52 md:w-10 h-[40px] lg:bg-white bg-transparent font-general-Medium lg:text-lg rounded-full flex items-center gap-4 pl-4 md:overflow-hidden lg:border-2 lg:border-blue-800"
       >
-        <svg class="w-6 h-6 text-blue-800 hidden md:block">
+        <svg class="w-6 h-6 text-blue-800 dark:text-white/80 hidden md:block">
           <use href="#search"></use>
         </svg>
         <input
@@ -332,7 +332,11 @@
         <div class="flex items-center justify-between mt-4 py-4">
           <!-- logo -->
           <div class="w-[150px]">
-            <img src="./assets/image/logo/image.png" alt="logo" />
+            <h1
+              class="text-dark-primer dark:text-white font-bold font-general-Bold text-4xl"
+            >
+              LOGO
+            </h1>
           </div>
           <!-- close svg -->
           <svg class="close w-6 h-6 dark:text-blue-300">
@@ -1264,12 +1268,16 @@
     <!-- Finish main project -->
     <!-- Start Footer section -->
 
-    <footer class="w-full bg-white dark:bg-dark-primer">
+    <footer
+      class="w-full flex items-center justify-center bg-white dark:bg-dark-primer"
+    >
       <div class="w-full flex items-center flex-col">
-        <div class="flex items-center gap-[65px] pl-[30hug] py-[35px]">
+        <div
+          class="flex items-center justify-between w-full px-[29px] py-[35px] md:px-6 md:pt-12 lg:px-16 lg:pt-[60px] xl:px-60 xl:pt-[90px] max-w-[1500px]"
+        >
           <div class="w-[63hug] h-[50px] mt-4">
             <h1
-              class="font-extralight font-general-Regular text-[28px] text-dark-primer dark:text-white text-center"
+              class="font-extralight font-general-Regular text-[28px] md:text-4xl lg:text-5xl text-dark-primer dark:text-white text-center"
             >
               LOGO
             </h1>
@@ -1277,12 +1285,12 @@
           <div class="">
             <form action="#" class="flex items-center gap-[10px]">
               <button
-                class="py-[7px] px-7 bg-white dark:bg-dark-primer text-dark-primer dark:text-white/100 transition-all duration-300 font-medium font-general-Medium text-xs text-center rounded-xl border dark:border-white border-dark-primer"
+                class="py-[7px] px-7 md:py-0 md:px-0 md:w-[100px] md:h-10 lg:w-[140px] lg:h-[50px] bg-white dark:bg-dark-primer text-dark-primer dark:text-white/100 transition-all duration-300 font-medium font-general-Medium text-xs md:text-sm lg:text-base text-center rounded-xl border dark:border-white border-dark-primer"
               >
                 Login
               </button>
               <button
-                class="py-[7px] px-7 bg-dark-primer dark:bg-blue-300 text-white/80 transition-all duration-300 dark:text-black/100 font-medium font-general-Medium text-xs text-center rounded-xl text-nowrap"
+                class="py-[7px] px-7 md:py-0 md:px-0 md:w-[100px] md:h-10 lg:w-[140px] lg:h-[50px] bg-dark-primer dark:bg-blue-300 text-white/80 transition-all duration-300 dark:text-black/100 font-medium font-general-Medium text-xs md:text-sm lg:text-base text-center rounded-xl text-nowrap"
               >
                 Sing Up
               </button>
@@ -1290,29 +1298,31 @@
           </div>
         </div>
         <span
-          class="block w-full h-[1px] bg-dark-primer dark:bg-white transition-all duration-300"
+          class="block w-full h-[1px] xl:w-[78%] bg-dark-primer dark:bg-white transition-all duration-300 max-w-[1500px]"
         ></span>
-        <div class="pl-[32px] pt-[63px] pb-[33px]">
-          <div class="flex items-center gap-12">
+        <div
+          class="w-full pl-[32px] pt-[63px] pb-[33px] md:px-6 md:pb-10 lg:px-16 lg:pb-16 xl:px-60 xl:pb-24 flex flex-col items-center justify-between md:flex-row max-w-[1500px]"
+        >
+          <div class="flex items-center gap-x-12 xl:gap-x-40">
             <div>
               <h4
-                class="font-bold font-general-Bold text-base text-dark-primer/80 dark:text-white/80 transition-all duration-300"
+                class="font-bold font-general-Bold text-base md:text-lg lg:text-[20px] text-dark-primer/80 dark:text-white/80 transition-all duration-300"
               >
                 Products
               </h4>
               <ul class="indent-4 space-y-[15px] mt-[15px] relative">
                 <li
-                  class="child:font-general-Regular child:font-extralight child:text-sm child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
+                  class="child:font-general-Regular child:font-extralight child:text-sm child:md:text-base child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
                 >
                   <a href="#">Features</a>
                 </li>
                 <li
-                  class="child:font-general-Regular child:font-extralight child:text-sm child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
+                  class="child:font-general-Regular child:font-extralight child:text-sm child:md:text-base child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
                 >
                   <a href="#">Integration</a>
                 </li>
                 <li
-                  class="child:font-general-Regular child:font-extralight child:text-sm child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
+                  class="child:font-general-Regular child:font-extralight child:text-sm child:md:text-base child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
                 >
                   <a href="#">Roadmap</a>
                 </li>
@@ -1320,7 +1330,7 @@
             </div>
             <div class="mt-8">
               <h4
-                class="font-bold font-general-Bold text-base transition-all duration-300 text-dark-primer/80 dark:text-white/80"
+                class="font-bold font-general-Bold text-base md:text-lg lg:text-[20px] transition-all duration-300 text-dark-primer/80 dark:text-white/80"
               >
                 Company
               </h4>
@@ -1328,46 +1338,46 @@
                 class="indent-4 space-y-[15px] mt-[15px] relative text-nowrap"
               >
                 <li
-                  class="child:font-general-Regular child:font-extralight child:text-sm child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
+                  class="child:font-general-Regular child:font-extralight child:text-sm child:md:text-base child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
                 >
                   <a href="#">About</a>
                 </li>
                 <li
-                  class="child:font-general-Regular child:font-extralight child:text-sm child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
+                  class="child:font-general-Regular child:font-extralight child:text-sm child:md:text-base child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
                 >
                   <a href="#">Term Of Services</a>
                 </li>
                 <li
-                  class="child:font-general-Regular child:font-extralight child:text-sm child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
+                  class="child:font-general-Regular child:font-extralight child:text-sm child:md:text-base child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
                 >
                   <a href="#">Privacy Policy</a>
                 </li>
                 <li
-                  class="child:font-general-Regular child:font-extralight child:text-sm child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
+                  class="child:font-general-Regular child:font-extralight child:text-sm child:md:text-base child:dark:text-white/80 child:text-dark-primer/80 child:footer-link__item__style child:transition-all child:duration-300"
                 >
                   <a href="#">Licensed & Regulation</a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="mt-7">
+          <div class="mt-7 md:mt-0">
             <h4
-              class="font-medium font-general-Medium text-base text-dark-primer/80 dark:text-white/80 transition-all duration-300"
+              class="font-medium font-general-Medium text-base md:text-lg text-dark-primer/80 dark:text-white/80 transition-all duration-300"
             >
               Stay In Touch
             </h4>
             <span
-              class="font-extralight font-general-Regular text-sm text-white/40 dark:text-[#A9A8A8]/80 transition-all duration-300"
+              class="font-extralight font-general-Regular text-sm md:text-base text-gray-600 dark:text-[#A9A8A8]/80 transition-all duration-300"
               >Keep Updated!!</span
             >
             <form action="#" class="flex items-center gap-2 mt-[18px]">
               <input
                 type="text"
-                class="bg-gray-200/60 dark:bg-[#081A24] w-[200px] border-2 border-blue-300 rounded-xl pl-5 py-[7px] font-general-Regular font-extralight text-xs text-dark-primer/70 dark:text-white/70 outline-none focus:bg-gray-100/80 dark:focus:bg-[#081a244c] transition-all duration-300"
+                class="bg-gray-200/60 dark:bg-[#081A24] w-[200px] md:w-[280px] lg:w-[310px] border-2 border-blue-300 rounded-xl md:rounded-lg pl-5 py-[7px] md:py-3 lg:py-[13px] font-general-Regular font-extralight text-xs md:text-sm lg:text-base text-dark-primer/70 dark:text-white/70 outline-none focus:bg-gray-100/80 dark:focus:bg-[#081a244c] transition-all duration-300"
                 placeholder="Enter Your Email"
               />
               <button
-                class="px-[30px] py-[4px] rounded-xl bg-dark-primer dark:bg-blue-300 text-white/80 dark:text-black/100 transition-all duration-300"
+                class="py-[7px] px-7 md:py-0 md:px-0 md:w-[100px] md:h-10 lg:h-[52px] bg-dark-primer dark:bg-blue-300 text-white/80 transition-all duration-300 dark:text-black/100 font-medium font-general-Medium text-xs md:text-sm text-center rounded-xl text-nowrap"
               >
                 submit
               </button>
@@ -1375,23 +1385,25 @@
           </div>
         </div>
         <div
-          class="w-full items-center justify-between px-[88px] bg-[#c3c3c348] dark:bg-[#090926] transition-all duration-300"
+          class="w-full items-center justify-between px-[88px] lg:px-[100px] bg-[#c3c3c348] dark:bg-[#090926] transition-all duration-300"
         >
-          <div class="w-full flex items-center flex-col py-2 space-y-1">
+          <div
+            class="w-full flex items-center flex-col md:flex-row md:justify-between py-2 md:py-4 space-y-1"
+          >
             <div class="flex items-center gap-5">
               <a
                 href="#"
-                class="font-general-Regular font-extralight text-sm text-nowrap text-dark-primer/80 dark:text-blue-700 transition-all duration-300 underline dark:underline-none"
+                class="font-general-Regular font-extralight text-sm md:text-base lg:text-lg text-nowrap text-dark-primer/80 dark:text-blue-700 transition-all duration-300 underline dark:underline-none"
                 >Term Of Service</a
               >
               <a
                 href="#"
-                class="font-general-Regular font-extralight text-sm text-nowrap text-dark-primer/80 dark:text-blue-700 transition-all duration-300 underline dark:underline-none"
+                class="font-general-Regular font-extralight text-sm md:text-base lg:text-lg text-nowrap text-dark-primer/80 dark:text-blue-700 transition-all duration-300 underline dark:underline-none"
                 >Policy Service</a
               >
             </div>
             <span
-              class="font-general-Regular font-extralight text-sm text-nowrap text-dark-primer/80 dark:text-blue-600 transition-all duration-300"
+              class="font-general-Regular font-extralight text-sm md:text-base lg:text-lg text-nowrap text-dark-primer/80 dark:text-blue-600 transition-all duration-300"
               >© 2024 All Rights Reserved.</span
             >
           </div>
@@ -1404,7 +1416,7 @@
 
     <div
       id="overlay"
-      class="transition-all absolute z-40 inset-0 w-full h-full m-auto bg-[#0000001b] overlay-hide"
+      class="transition-all absolute z-40 inset-0 w-full h-full m-auto bg-[#00000039] overlay-hide"
     ></div>
 
     <!-- Finish overlay layout -->
