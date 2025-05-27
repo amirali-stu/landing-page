@@ -299,7 +299,7 @@
       </ul>
       <!-- search and menu btn -->
       <div
-        class="xl:w-64 lg:w-52 md:w-10 h-[40px] lg:bg-white bg-transparent font-general-Medium lg:text-lg rounded-full flex items-center gap-4 pl-4 md:overflow-hidden lg:border-2 lg:border-blue-800"
+        class="xl:w-64 lg:w-52 md:w-10 h-[40px] lg:dark:bg-dark-primer/70 lg:bg-white bg-transparent font-general-Medium lg:text-lg rounded-full flex items-center gap-4 pl-4 md:overflow-hidden lg:border-2 lg:border-blue-800"
       >
         <svg class="w-6 h-6 text-blue-800 dark:text-white/80 hidden md:block">
           <use href="#search"></use>
@@ -307,7 +307,7 @@
         <input
           type="text"
           placeholder="Search here..."
-          class="text-[#404169] font-general-Medium font-medium text-lg outline-none border-none w-full lg:block hidden"
+          class="text-[#404169] dark:text-white font-general-Medium font-medium bg-transparent text-lg outline-none border-none w-full lg:block hidden"
         />
         <div
           id="menu-btn"
@@ -1420,7 +1420,6 @@
     ></div>
 
     <!-- Finish overlay layout -->
-
     <!-- Start preload animation script -->
 
     <script>
@@ -1455,7 +1454,7 @@
     <!-- start main script -->
 
     <script src="./script/them.js"></script>
-    <script type="module" src="./script/index.js"></script>
+    <script type="module" src="./script/utils/aside.js"></script>
     <!-- Finish main script -->
   </body>
 </html>
